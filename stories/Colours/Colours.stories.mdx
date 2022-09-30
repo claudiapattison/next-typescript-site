@@ -1,0 +1,79 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+
+<Meta title="Styleguide/Colours" />
+
+export const primary = [{ name: "Primary", class: "primary", hex: "#a4e818" }];
+
+# Colours
+
+Breckon & Breckon online visual identity includes the following colour sections:
+
+- Primary - used to represent primary interface elements for a user. It's the color displayed most frequently across your app's screens and components.
+- Secondary - used to represent secondary interface elements for a user.
+- Error - used to represent interface elements that the user should be made aware of.
+- Info - used to present information to the user that is neutral and not necessarily important.
+- Success - used to indicate the successful completion of an action that user triggered.
+- Warning - used to represent potentially dangerous actions or important messages.
+- Brand - used to represent Breckons brand colours.
+
+  <ColorPalette>
+    <ColorItem
+      title="Primary"
+      subtitle="Blues"
+      colors={{
+        Primary: "HSL(221, 100%, 19%)",
+        Primary100: "HSLA(221, 100%, 19%, 0.8)",
+        Primary200: "HSL(192, 69%, 67%)",
+      }}
+    />
+    <ColorItem
+      title="Secondary"
+      subtitle="Greys"
+      colors={{
+        Secondary: "hsl(240, 3%, 13%)",
+        Secondary100: "hsl(223, 4%, 34%)",
+        Secondary200: "hsl(231, 7%, 81%)",
+      }}
+    />
+    <ColorItem
+      title="Brand"
+      colors={{
+        Brand1: "hsl(21, 11%, 32%)",
+        Brand2: "hsl(19, 99%, 54%)",
+        Brand3: "hsl(205, 23%, 18%)",
+        Brand4: "hsl(219, 47%, 17%)",
+        Brand5: "hsl(39, 40%, 49%)",
+      }}
+    />
+    <ColorItem
+      title="Alerts"
+      colors={{
+        Error: "hsl(6, 91%, 95%)",
+        Info: "hsl(200, 43%, 95%)",
+        Success: "hsl(144, 100%, 96%)",
+        Warning: "hsl(54, 100%, 90%)",
+      }}
+    />
+    <ColorItem
+      title="Alerts Border"
+      colors={{
+        Error: "hsl(0, 81%, 45%)",
+        Info: "hsl(207, 73%, 42%)",
+        Success: "hsl(137, 73%, 42%)",
+        Warning: "hsl(50, 73%, 42%)",
+      }}
+    />
+    <ColorItem
+      title="White"
+      colors={{
+        White: "hsl(0, 0%, 100%)",
+        White100: "hsl(240, 17%, 95%)",
+      }}
+    />
+    <ColorItem
+      title="Black"
+      colors={{
+        Black: "hsl(221, 100%, 4%)",
+      }}
+    />
+  </ColorPalette>

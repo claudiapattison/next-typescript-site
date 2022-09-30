@@ -1,0 +1,28 @@
+@use '../../src/scss/abstracts';
+
+.header {
+  padding-top: 3.1rem;
+  padding-bottom: 3.1rem;
+  background-color: var(--c-grey);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-500);
+  font-size: 1.6rem;
+}
+
+@include abstracts.mq-min(abstracts.$mq-md) {
+
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+}

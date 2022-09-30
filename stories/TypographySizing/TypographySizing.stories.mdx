@@ -1,0 +1,144 @@
+import { Meta, Typeset, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta title="Styleguide/Typography Sizing" />
+
+# Typography Sizing
+
+**Font:** Montserrat
+
+**Weights:** 400(regular), 500(medium), 600(semibold)
+
+## Mobile
+
+<Typeset
+  fontSizes={[26, 24, 20, 18, 16, 14, 12]}
+  fontWeight={400}
+  sampleText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+  fontFamily={'"Montserrat'}
+/>
+
+> ###### xxxlarge
+>
+> **font-size:** 2.6rem
+> **line-height:** 3.9rem
+>
+> ###### xxlarge
+>
+> **font-size:** 2.4rem
+> **line-height:** 3.6rem
+>
+> ###### xlarge
+>
+> **font-size:** 2rem
+> **line-height:** 3rem
+>
+> ###### large
+>
+> **font-size:** 1.8rem
+> **line-height:** 2.7rem
+>
+> ###### medium
+>
+> **font-size:** 1.6rem
+> **line-height:** 2.4rem
+>
+> ###### small
+>
+> **font-size:** 1.4rem
+> **line-height:** 2.1rem
+>
+> ###### xsmall
+>
+> **font-size:** 1.2rem
+> **line-height:** 1.8rem
+
+<br />
+
+## Desktop
+
+<Typeset
+  fontSizes={[50, 46, 40, 30, 24, 22, 20, 18, 16, 14]}
+  fontWeight={400}
+  sampleText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+  fontFamily={'"Montserrat'}
+/>
+
+In additional to the normal typography sizes, there is an additional three mega sizes used on desktop which are used for heros and large pieces of text.
+
+<br />
+
+> ###### mega1
+>
+> **font-size:** 5rem
+> **line-height:** 7.5rem
+>
+> ###### mega2
+>
+> **font-size:** 4.6rem
+> **line-height:** 6.9rem
+>
+> ###### mega3
+>
+> **font-size:** 4rem
+> **line-height:** 6rem
+>
+> ###### xxxlarge
+>
+> **font-size:** 3rem
+> **line-height:** 4.5rem
+>
+> ###### xxlarge
+>
+> **font-size:** 2.4rem
+> **line-height:** 3.6rem
+>
+> ###### xlarge
+>
+> **font-size:** 2.2rem
+> **line-height:** 3.3rem
+>
+> ###### large
+>
+> **font-size:** 2rem
+> **line-height:** 3rem
+>
+> ###### medium
+>
+> **font-size:** 1.8rem
+> **line-height:** 2.7rem
+>
+> ###### small
+>
+> **font-size:** 1.6rem
+> **line-height:** 2.4rem
+>
+> ###### xsmall
+>
+> **font-size:** 1.4rem
+> **line-height:** 2.1rem
+
+<br />
+
+## Mixins
+
+To set the required font size, there is a font mixins that are to be used which will set the correct font size to the line height. Import the sass mixin in the scss file to use.
+
+<br />
+
+#### Mobile and Desktop sizing
+
+```html
+@include abstracts.get-font-size('xsmall');
+```
+
+#### Mobile sizing only
+
+```html
+@include abstracts.get-font-size-mobile('xsmall');
+```
+
+#### Desktop sizing only
+
+```html
+@include abstracts.get-font-size-desktop('xsmall');
+```

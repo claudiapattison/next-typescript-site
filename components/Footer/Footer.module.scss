@@ -1,0 +1,10 @@
+@use '../../src/scss/abstracts';
+
+.footer {
+  background-color: var(--c-grey);
+}
+
+
+@include abstracts.mq-min(abstracts.$mq-md) {
+
+}

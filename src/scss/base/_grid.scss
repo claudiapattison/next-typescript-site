@@ -1,0 +1,27 @@
+@use '../abstracts/mixins/responsive' as responsive;
+@use '../abstracts/variables/variables' as variables;
+
+.container {
+  max-width: var(--s-container);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+}
+
+@include responsive.mq-min(variables.$mq-md) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 6rem;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .grid--center {
+    align-items: center;
+  }
+}

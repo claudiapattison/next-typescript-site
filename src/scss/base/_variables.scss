@@ -1,0 +1,28 @@
+:root {
+  //Colours 
+  --c-primary: hsl(227, 89%, 21%);
+  --c-primary-100: hsl(208, 86%, 65%); 
+  --c-secondary: hsl(9, 73%, 57%); 
+  --c-grey: hsl(0, 0%, 95%);
+  --c-grey-100: hsl(0, 0%, 34%);
+  --c-white: hsl(0, 0%, 100%);
+  --c-black: hsl(221, 100%, 4%);
+
+  //Fonts
+  --ff-primary: 'Red Hat Text', sans-serif;
+  --ff-secondary: 'Red Hat Display', sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  //Sizing 
+  --s-container: 1232px;
+  --s-wrapper: 6.5rem;
+  --s-wrapper-md: 8.5rem;
+  --s-wrapper-lg: 10.8rem;
+
+  //Transitions
+  --t-speed: 0.3s;
+  --t-delay: 0.3s;
+}

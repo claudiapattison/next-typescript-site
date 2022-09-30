@@ -1,0 +1,49 @@
+// cant select all in folder. refactor once config is fixed
+@use '../abstracts/mixins/typography' as abstracts;
+@use '../abstracts/mixins/responsive' as responsive;
+@use '../abstracts/variables/variables' as variables;
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-700);
+  color: var(--c-primary);
+}
+
+h1,
+.h1 {
+  margin-bottom: 2rem;
+  font-size: 4.2rem;
+  line-height: 4.2rem;
+}
+
+h2,
+.h2 {
+}
+
+h3,
+.h3 {
+}
+
+p {
+  margin: 0 0 2rem 0;
+}
+
+strong {
+  font-weight: var(--fw-700);
+}
+
+small {
+  @include abstracts.get-font-size-mobile('small');
+}
+
+::selection {
+  background-color: var(--c-primary);
+  color: var(--c-white);
+}
+
+@include responsive.mq-min(variables.$mq-md) {
+  h1,
+  .h1 {
+  }
+}
