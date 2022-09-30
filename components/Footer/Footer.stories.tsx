@@ -11,7 +11,6 @@ export default {
 const Template: ComponentStory<typeof Footer> = (args) => <Footer {...args} />;
 
 export const Primary = Template.bind({}); 
-
 Primary.args = {
   text: 'Innovative technologies and services for complex training needs.',
   email: 'info@aquilalearning.com',
